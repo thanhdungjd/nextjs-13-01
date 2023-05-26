@@ -1,10 +1,12 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 2rem;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  min-height: 50vh;
+  background-color: rgba(var(--background-start-rgb), 1);
+  background-color: #222;
 }
 
 .description {
@@ -97,7 +99,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);

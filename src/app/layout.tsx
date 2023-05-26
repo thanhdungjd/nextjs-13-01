@@ -19,7 +19,7 @@ export default function RootLayout({
         <div>HomeLayout:</div>
 
         <nav>
-          <div>my Navbar</div>
+          <div>home Navbar</div>
         </nav>
 
         <div className="debug">{children}</div>
