@@ -18,8 +18,13 @@ export default function RootLayout({
       <body suppressHydrationWarning={true} className={inter.className}>
         <div>HomeLayout:</div>
 
-        <nav>
-          <div>home Navbar</div>
+        <nav style={{ backgroundColor: "#555", padding: "5px" }}>
+          <span>home Navbar: </span>
+          <a href="/">Home</a>
+          <span> | </span>
+          <a href="/about">About</a>
+          <span> | </span>
+          <a href="/blog">Blog</a>
         </nav>
 
         <div className="debug">{children}</div>
