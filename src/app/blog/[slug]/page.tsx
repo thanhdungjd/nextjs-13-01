@@ -2,13 +2,15 @@ import styles from "./styles.module.css";
 
 import React from "react";
 
-// a function return a promise after 3000ms
-// import resolve and resolve from what libs?
-
 function wait() {
-  return new Promise((resolve: any) => {
+  return new Promise((resolve: any, reject: any) => {
     setTimeout(() => {
-      resolve();
+      //   resolve();
+      reject(
+        new Error(
+          "This is an error from the blog detail page. It will be caught by the error boundary in the _app.tsx file. ALEX"
+        )
+      );
     }, 3000);
   });
 }
