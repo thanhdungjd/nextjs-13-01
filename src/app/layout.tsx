@@ -25,6 +25,8 @@ export default function RootLayout({
           <a href="/about">About</a>
           <span> | </span>
           <a href="/blog">Blog</a>
+          <span> | </span>
+          <a href="/blog/first-blog">Blog Post</a>
         </nav>
 
         <div className="debug">{children}</div>
